@@ -1,0 +1,43 @@
+
+
+
+
+
+<div class="container">
+
+  <table class="table ">
+  <thead>
+    <tr>
+      
+      <th scope="col">Nombre</th>
+      <th scope="col">ApellidoP</th>
+      <th scope="col">ApellidoM</th>
+      <th scope="col">Sexo</th>
+      <th scope="col">Edad</th>
+      <th scope="col">Correo</th>
+      <th scope="col">icono</th>
+    </tr>
+  </thead>
+  <tbody *ngFor="let tarea of Agregados"> 
+    <tr>
+     
+      <td>{{tarea.Nombre}}</td>
+      <td>{{tarea.Apellidop}}</td>
+      <td>{{tarea.Apellidom}}</td>
+      <td>{{tarea.Sexo}}</td>
+      <td>{{tarea.Edad}}</td>
+      <td>{{tarea.Correo}}</td>
+      <td><i class="fa" [ngClass]="{'fa-bars':tarea.icono==1,'fa-binoculars':tarea.icono==2,
+        'fa-bicycle':tarea.icono==3,'fa-bell':tarea.icono==4,'fa-briefcase':tarea.icono==5,'fa-bomb':tarea.icono==6,
+        'fa-blind':tarea.icono==7,'fa-book':tarea.icono==8,'fa-comment':tarea.icono==9,'fa-cloud':tarea.icono==10}"></i></td>
+     
+     
+    </tr>
+    
+  </tbody>
+</table>
+
+</div>
+
+
+
